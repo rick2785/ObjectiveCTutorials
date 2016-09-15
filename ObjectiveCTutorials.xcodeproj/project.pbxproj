@@ -13,6 +13,10 @@
 		2002457A1D8610F4000E89EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 200245781D8610F4000E89EC /* Main.storyboard */; };
 		2002457C1D8610F4000E89EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2002457B1D8610F4000E89EC /* Assets.xcassets */; };
 		2002457F1D8610F4000E89EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2002457D1D8610F4000E89EC /* LaunchScreen.storyboard */; };
+		200245891D86114B000E89EC /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 200245881D86114B000E89EC /* HTTPService.m */; };
+		2002458D1D863FD3000E89EC /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2002458C1D863FD3000E89EC /* VideoCell.m */; };
+		200245911D86D673000E89EC /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 200245901D86D673000E89EC /* Video.m */; };
+		200245951D86E3AD000E89EC /* VideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 200245941D86E3AD000E89EC /* VideoVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		2002457B1D8610F4000E89EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2002457E1D8610F4000E89EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		200245801D8610F4000E89EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		200245871D86114B000E89EC /* HTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
+		200245881D86114B000E89EC /* HTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
+		2002458B1D863FD3000E89EC /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		2002458C1D863FD3000E89EC /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+		2002458F1D86D673000E89EC /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		200245901D86D673000E89EC /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		200245931D86E3AD000E89EC /* VideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoVC.h; sourceTree = "<group>"; };
+		200245941D86E3AD000E89EC /* VideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +70,12 @@
 		2002456E1D8610F4000E89EC /* ObjectiveCTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				200245921D86E377000E89EC /* Controller */,
+				2002458E1D86D65D000E89EC /* Model */,
+				2002458A1D863FAA000E89EC /* View */,
+				200245861D861119000E89EC /* Services */,
 				200245721D8610F4000E89EC /* AppDelegate.h */,
 				200245731D8610F4000E89EC /* AppDelegate.m */,
-				200245751D8610F4000E89EC /* ViewController.h */,
-				200245761D8610F4000E89EC /* ViewController.m */,
 				200245781D8610F4000E89EC /* Main.storyboard */,
 				2002457B1D8610F4000E89EC /* Assets.xcassets */,
 				2002457D1D8610F4000E89EC /* LaunchScreen.storyboard */,
@@ -77,6 +91,44 @@
 				200245701D8610F4000E89EC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		200245861D861119000E89EC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				200245871D86114B000E89EC /* HTTPService.h */,
+				200245881D86114B000E89EC /* HTTPService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		2002458A1D863FAA000E89EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2002458B1D863FD3000E89EC /* VideoCell.h */,
+				2002458C1D863FD3000E89EC /* VideoCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2002458E1D86D65D000E89EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2002458F1D86D673000E89EC /* Video.h */,
+				200245901D86D673000E89EC /* Video.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		200245921D86E377000E89EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				200245751D8610F4000E89EC /* ViewController.h */,
+				200245761D8610F4000E89EC /* ViewController.m */,
+				200245931D86E3AD000E89EC /* VideoVC.h */,
+				200245941D86E3AD000E89EC /* VideoVC.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +204,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				200245771D8610F4000E89EC /* ViewController.m in Sources */,
+				2002458D1D863FD3000E89EC /* VideoCell.m in Sources */,
+				200245891D86114B000E89EC /* HTTPService.m in Sources */,
+				200245911D86D673000E89EC /* Video.m in Sources */,
+				200245951D86E3AD000E89EC /* VideoVC.m in Sources */,
 				200245741D8610F4000E89EC /* AppDelegate.m in Sources */,
 				200245711D8610F4000E89EC /* main.m in Sources */,
 			);

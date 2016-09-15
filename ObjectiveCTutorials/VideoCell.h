@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  VideoCell.h
 //  ObjectiveCTutorials
 //
 //  Created by Rickey Hrabowskie on 9/11/16.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Video;
 
-@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
-
-
+@interface VideoCell : UITableViewCell
+-(void)updateUI:(nonnull Video*)video;
 @end
-
